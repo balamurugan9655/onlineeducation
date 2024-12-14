@@ -1,0 +1,62 @@
+.hb-shadow:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.bg-scroll{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.home-parallex {
+    background-image: url("./pages/image/feedback-bg-img.jpg");
+}
+.about-parallex {
+    background-image: url("./pages/image/about-bg-img.jpeg");
+}
+.Abg-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease;
+}
+.Abg-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.7s ease;
+    background-size: cover;
+    background-position: center;
+}
+.Abg-img:hover::before {
+    left: 0;  
+}
+.Abg-img1::before {
+    background-image: url("./pages/image/full-stack-company-logos.jpg");
+}
+.Abg-img2::before {
+    background-image: url("./pages/image/it-company-img2.jpg");
+}
+.Abg-img3::before {
+    background-image: url("./pages/image/it-company-img3.jpg");
+}
+.Abg-img4::before {
+    background-image: url("./pages/image/it-company-img4.jpg");
+}
+.Abg-img5::before {
+    background-image: url("./pages/image/it-company-img5.jpg");
+}
+.contact-parallex {
+    background-image: url("./pages/image/contact-bg-img.jpg");
+}
+.courses-parallex {
+    background-image: url("./pages/image/courses-bg-img.jpg");
+}
+.cur-symble {
+    cursor: not-allowed;
+}
