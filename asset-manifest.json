@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/onlineeducation/static/css/main.f52ce0c1.css",
+    "main.js": "/onlineeducation/static/js/main.12948417.js",
+    "static/media/Data-science-img.jpg": "/onlineeducation/static/media/Data-science-img.9675aeedda3503d0dcad.jpg",
+    "static/media/about-bg-img.jpeg": "/onlineeducation/static/media/about-bg-img.0025b4212b6e8d479989.jpeg",
+    "static/media/Cybersecurity-img.jpg": "/onlineeducation/static/media/Cybersecurity-img.d82c3383c6908f047503.jpg",
+    "static/media/PHP-img.jpg": "/onlineeducation/static/media/PHP-img.7f6328504acfce371b38.jpg",
+    "static/media/contact-bg-img.jpg": "/onlineeducation/static/media/contact-bg-img.3544c7cf7e5cfb632d60.jpg",
+    "static/media/feedback-bg-img.jpg": "/onlineeducation/static/media/feedback-bg-img.feaa035bd7274c5cba33.jpg",
+    "static/media/courses-bg-img.jpg": "/onlineeducation/static/media/courses-bg-img.3af79838ba11aae731a8.jpg",
+    "static/media/people-img-5.jpg": "/onlineeducation/static/media/people-img-5.63563bfc1f2ab133d49f.jpg",
+    "static/media/learning-img-1-org.png": "/onlineeducation/static/media/learning-img-1-org.8ad5beebbf71ef9fa633.png",
+    "static/media/people-img-4.jpg": "/onlineeducation/static/media/people-img-4.4724b8f24208b22b0eed.jpg",
+    "static/media/people-img-3.png": "/onlineeducation/static/media/people-img-3.5d9c13033f597a1e04c0.png",
+    "static/media/people-img-2.png": "/onlineeducation/static/media/people-img-2.26f95a4fecc945c2498e.png",
+    "static/media/people-img-1.png": "/onlineeducation/static/media/people-img-1.e8f359537396d95192f6.png",
+    "static/media/Python-img-org.jpg": "/onlineeducation/static/media/Python-img-org.8e35f288800e896fe58a.jpg",
+    "static/media/UI-UX-designer-img.jpg": "/onlineeducation/static/media/UI-UX-designer-img.3936673866ef4bd1c77a.jpg",
+    "static/media/Digital-marketing.jpg": "/onlineeducation/static/media/Digital-marketing.3a6d5b54cdb2d1c2da31.jpg",
+    "static/media/Full-stack-development-img.jpg": "/onlineeducation/static/media/Full-stack-development-img.9506efd33683d482afca.jpg",
+    "static/media/slide-img-2.jpg": "/onlineeducation/static/media/slide-img-2.f17e1506ed3759d6f2d9.jpg",
+    "static/media/slide-img-1.jpg": "/onlineeducation/static/media/slide-img-1.0a1c934e7f0ce08b15a7.jpg",
+    "static/media/slide-img-3-org.jpg": "/onlineeducation/static/media/slide-img-3-org.604c956b2ca77d16b301.jpg",
+    "static/media/Online-Learning.svg": "/onlineeducation/static/media/Online-Learning.c6f828a1a0a11bae3970a783b190dd59.svg",
+    "static/media/Business-analytics-img.jpg": "/onlineeducation/static/media/Business-analytics-img.eceaf3ecde60703b2ae9.jpg",
+    "static/media/Register.svg": "/onlineeducation/static/media/Register.c62d74acc1cb4fe95a844acea4765623.svg",
+    "static/media/full-stack-company-logos.jpg": "/onlineeducation/static/media/full-stack-company-logos.c88a35c569e82bb1a87d.jpg",
+    "static/media/it-company-img2.jpg": "/onlineeducation/static/media/it-company-img2.5296e3fb72f0bd4f05bd.jpg",
+    "static/media/it-company-img5.jpg": "/onlineeducation/static/media/it-company-img5.b15138fd235072ece0a9.jpg",
+    "static/media/Coures-Select.svg": "/onlineeducation/static/media/Coures-Select.558e865741af80fd9c304a8e14ee21f3.svg",
+    "static/media/it-company-img3.jpg": "/onlineeducation/static/media/it-company-img3.0094f55396c8de64379e.jpg",
+    "static/media/it-company-img4.jpg": "/onlineeducation/static/media/it-company-img4.3f629d7c394b178517f4.jpg",
+    "index.html": "/onlineeducation/index.html",
+    "static/media/star-svgrepo-com.svg": "/onlineeducation/static/media/star-svgrepo-com.692f18a7c4984969c1256ee5a52fdac9.svg",
+    "main.f52ce0c1.css.map": "/onlineeducation/static/css/main.f52ce0c1.css.map",
+    "main.12948417.js.map": "/onlineeducation/static/js/main.12948417.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f52ce0c1.css",
+    "static/js/main.12948417.js"
+  ]
+}
