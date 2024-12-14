@@ -13,7 +13,7 @@ function Apage1()
     return(
         <Container fluid className="text-center w-100 d-flex bg-scroll about-parallex" style={{height:'400px'}}>
             <Container className="mt-auto mb-auto text-primary">
-                <h1>About</h1>
+                <h1>About Page</h1>
                 <p className="fw-bold text-light bg-dark bg-opacity-25">Online education provides flexible learning opportunities, enabling students to access courses and resources from anywhere. It empowers learners with self-paced options, bridging gaps in traditional education systems.</p>
             </Container>
         </Container>
