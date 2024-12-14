@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/onlineeducation/static/css/main.f52ce0c1.css",
-    "main.js": "/onlineeducation/static/js/main.1989013b.js",
+    "main.js": "/onlineeducation/static/js/main.915052a4.js",
     "static/media/Data-science-img.jpg": "/onlineeducation/static/media/Data-science-img.9675aeedda3503d0dcad.jpg",
     "static/media/about-bg-img.jpeg": "/onlineeducation/static/media/about-bg-img.0025b4212b6e8d479989.jpeg",
     "static/media/Cybersecurity-img.jpg": "/onlineeducation/static/media/Cybersecurity-img.d82c3383c6908f047503.jpg",
@@ -34,10 +34,10 @@
     "index.html": "/onlineeducation/index.html",
     "static/media/star-svgrepo-com.svg": "/onlineeducation/static/media/star-svgrepo-com.692f18a7c4984969c1256ee5a52fdac9.svg",
     "main.f52ce0c1.css.map": "/onlineeducation/static/css/main.f52ce0c1.css.map",
-    "main.1989013b.js.map": "/onlineeducation/static/js/main.1989013b.js.map"
+    "main.915052a4.js.map": "/onlineeducation/static/js/main.915052a4.js.map"
   },
   "entrypoints": [
     "static/css/main.f52ce0c1.css",
-    "static/js/main.1989013b.js"
+    "static/js/main.915052a4.js"
   ]
 }
