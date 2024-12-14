@@ -76,31 +76,42 @@ const RegisterPage = () =>
             <Col md={6}>
               <h2 className="text-center mb-4">Online Education Registration</h2>
               <Form onSubmit={handleSubmit}>
-                <div className='d-flex justify-content-around'>
+                <Row>
+                  <Col md={6}>
                     <Form.Group controlId="formFirstName" className="mb-3">
                       <Form.Label>First Name : </Form.Label>
                       <Form.Control type="text" name="firstName" placeholder="Enter your first name" value={formData.firstName} onChange={handleChange} required/>
                     </Form.Group>
+                  </Col>
+                  <Col md={6}>
                     <Form.Group controlId="formLastName" className="mb-3">
                       <Form.Label>Last Name : </Form.Label>
                       <Form.Control type="text" name="lastName" placeholder="Enter your last name" value={formData.lastName} onChange={handleChange} required/>
                     </Form.Group>
-                </div>
-                <div className='d-flex justify-content-around'>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col md={6}>
                     <Form.Group controlId="formEmail" className="mb-3">
                       <Form.Label>Email : </Form.Label>
                       <Form.Control type="email" name="email" placeholder="Enter your email" value={formData.email} onChange={handleChange} required/>
-                    </Form.Group>
+                    </Form.Group> 
+                  </Col>
+                  <Col md={6}>
                     <Form.Group controlId="formPhone" className="mb-3">
                       <Form.Label>Phone Number : </Form.Label>
                       <Form.Control type="number" name="phone" placeholder="Enter your phone number" value={formData.phone} onChange={handleChange} required/>
                     </Form.Group>
-                </div>
-                <div className='d-flex justify-content-around'>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col md={6}>
                     <Form.Group controlId="formDateOfBirth" className="mb-3">
                       <Form.Label>Date of Birth : </Form.Label>
                       <Form.Control type="text" name="dateOfBirth" placeholder="DD/MM/YYYY" value={formData.dateOfBirth} onChange={handleChange} required/>
                     </Form.Group>
+                  </Col>
+                  <Col md={6}>
                     <Form.Group controlId="formGender" className="mb-3">
                       <Form.Label>Gender : </Form.Label>
                       <Form.Control as="select" name="gender" value={formData.gender} onChange={handleChange} required>
@@ -110,16 +121,22 @@ const RegisterPage = () =>
                         <option value="other">Other</option>
                       </Form.Control>
                     </Form.Group>
-                </div>
+                  </Col>
+                </Row>
                 <Form.Group controlId="course" className="mt-3">
-                    <Form.Label>Select Course</Form.Label>
+                  <Form.Label>Select Course</Form.Label>
                     <Form.Control as="select" name="course" value={formData.course} onChange={handleChange} required>
                       <option value="">Choose a course</option>
-                      <option value="react">React Development</option>
-                      <option value="node">Node.js Development</option>
-                      <option value="python">Python for Data Science</option>
+                      <option value="Full Stack Development">Full Stack Development</option>
+                      <option value="Digital Marketing">Digital Marketing</option>
+                      <option value="Cybersecurity">Cybersecurity</option>
+                      <option value="Business Analytics">Business Analytics</option>
+                      <option value="PHP">PHP</option>
+                      <option value="Data Science">Data Science</option>
+                      <option value="UI/UX Designer">UI/UX Designer</option>
+                      <option value="Python">Python</option>
                     </Form.Control>
-                  </Form.Group>
+                </Form.Group>
                 <>
                  <h6 className="mt-4">Address Details : </h6>
                     <Row>
@@ -136,7 +153,6 @@ const RegisterPage = () =>
                         </Form.Group>
                       </Col>
                     </Row>
-
                     <Row>
                       <Col md={6}>
                         <Form.Group controlId="state">
@@ -152,7 +168,7 @@ const RegisterPage = () =>
                       </Col>
                     </Row>
                 </>
-    
+                <br/>
                 <Form.Group controlId="formTerms" className="mb-3">
                   <Form.Check type="checkbox" name="agreeToTerms" label="I agree to the terms and conditions" checked={formData.agreeToTerms} onChange={handleChange} required/>
                 </Form.Group>
