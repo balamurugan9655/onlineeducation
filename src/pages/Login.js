@@ -37,9 +37,9 @@ const AuthPage = () => {
     };
   
     return (
-      <Container fluid className="p-5">
+      <Container fluid className="p-5 bg-scroll login-parallex">
         <Row className="justify-content-center ms-auto me-auto">
-          <Col sm={12} md={6} lg={6} className="border p-5">
+          <Col sm={12} md={6} lg={6} className="border rounded-3 bg-blur p-5">
             <Tab.Container defaultActiveKey="login">
               <Nav variant="tabs" className="justify-content-center mb-4">
                 <Nav.Item>
@@ -50,7 +50,7 @@ const AuthPage = () => {
                 </Nav.Item>
               </Nav>
               <Tab.Content>
-                <Tab.Pane eventKey="login">
+                <Tab.Pane eventKey="login" className="text-white">
                   <Form onSubmit={handleLoginSubmit}>
                     <Form.Group className="mb-3" controlId="loginEmail">
                       <Form.Label>Username : </Form.Label>
@@ -67,7 +67,7 @@ const AuthPage = () => {
                 </Tab.Pane>
   
                 <Tab.Pane eventKey="signup">
-                  <Form onSubmit={handleSignupSubmit}>
+                  <Form onSubmit={handleSignupSubmit} className="text-white">
                     <Form.Group className="mb-3" controlId="userName">
                       <Form.Label>Name : </Form.Label>
                       <Form.Control type="text" name="name" value={signupData.name} onChange={handleSignupChange} placeholder="Enter Your Name"/>

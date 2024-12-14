@@ -71,10 +71,11 @@ const RegisterPage = () =>
       };
     
       return (
-        <Container className="mt-5">
-          <Row className="justify-content-center">
-            <Col md={6}>
-              <h2 className="text-center mb-4">Online Education Registration</h2>
+        <Container fluid className="m-0 bg-scroll register-parallex">
+          <Container className='p-5'>
+            <Row className="justify-content-center">
+            <Col md={6} className='border p-4 bg-blur rounded-3 fw-bold'>
+              <h2 className="text-center text-primary mb-4">Register Form</h2>
               <Form onSubmit={handleSubmit}>
                 <Row>
                   <Col md={6}>
@@ -123,10 +124,10 @@ const RegisterPage = () =>
                     </Form.Group>
                   </Col>
                 </Row>
-                <Form.Group controlId="course" className="mt-3">
-                  <Form.Label>Select Course</Form.Label>
+                <Form.Group controlId="course" className="mt-3 mb-3">
+                  <Form.Label>Select Course : </Form.Label>
                     <Form.Control as="select" name="course" value={formData.course} onChange={handleChange} required>
-                      <option value="">Choose a course</option>
+                      <option value="" disabled>Choose a course</option>
                       <option value="Full Stack Development">Full Stack Development</option>
                       <option value="Digital Marketing">Digital Marketing</option>
                       <option value="Cybersecurity">Cybersecurity</option>
@@ -138,47 +139,48 @@ const RegisterPage = () =>
                     </Form.Control>
                 </Form.Group>
                 <>
-                 <h6 className="mt-4">Address Details : </h6>
+                 
                     <Row>
                       <Col md={6}>
-                        <Form.Group controlId="street">
-                          <Form.Label>Street Address</Form.Label>
+                        <Form.Group controlId="street" className="mb-3">
+                          <Form.Label>Street Address : </Form.Label>
                           <Form.Control type="text" placeholder="Enter your street address" name="street" value={formData.street} onChange={handleChange} required/>
                         </Form.Group>
                       </Col>
                       <Col md={6}>
-                        <Form.Group controlId="city">
-                          <Form.Label>City</Form.Label>
+                        <Form.Group controlId="city" className="mb-3">
+                          <Form.Label>City : </Form.Label>
                           <Form.Control type="text" placeholder="Enter your city" name="city" value={formData.city} onChange={handleChange} required/>
                         </Form.Group>
                       </Col>
                     </Row>
                     <Row>
                       <Col md={6}>
-                        <Form.Group controlId="state">
-                          <Form.Label>State</Form.Label>
+                        <Form.Group controlId="state" className="mb-3">
+                          <Form.Label>State : </Form.Label>
                           <Form.Control type="text" placeholder="Enter your state" name="state" value={formData.state} onChange={handleChange} required/>
                         </Form.Group>
                       </Col>
                       <Col md={6}>
-                        <Form.Group controlId="postalCode">
-                          <Form.Label>Postal Code</Form.Label>
-                          <Form.Control type="text" placeholder="Enter your postal code" name="postalCode" value={formData.postalCode} onChange={handleChange} required/>
+                        <Form.Group controlId="postalCode" className="mb-3">
+                          <Form.Label>Postal Code : </Form.Label>
+                          <Form.Control type="number" placeholder="Enter your postal code" name="postalCode" value={formData.postalCode} onChange={handleChange} required/>
                         </Form.Group>
                       </Col>
                     </Row>
                 </>
-                <br/>
+                
                 <Form.Group controlId="formTerms" className="mb-3">
                   <Form.Check type="checkbox" name="agreeToTerms" label="I agree to the terms and conditions" checked={formData.agreeToTerms} onChange={handleChange} required/>
                 </Form.Group>
     
-                <Button variant="primary" type="submit" className="w-100" disabled={!formData.agreeToTerms}>
+                <Button variant="outline-primary" type="submit" className="w-100" disabled={!formData.agreeToTerms}>
                   Register
                 </Button>
               </Form>
             </Col>
           </Row>
+          </Container>
         </Container>
       );
 }

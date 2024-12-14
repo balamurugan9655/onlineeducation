@@ -60,3 +60,12 @@
 .cur-symble {
     cursor: not-allowed;
 }
+.register-parallex {
+    background-image: url("./pages/image/Register-bg-img.jpg");
+}
+.bg-blur {
+    backdrop-filter: blur(10px);
+}
+.login-parallex {
+    background-image: url("./pages/image/Login-bg-img.jpg");
+}
