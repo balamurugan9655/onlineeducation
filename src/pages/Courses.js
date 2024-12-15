@@ -1,6 +1,8 @@
-import React from "react";
-import { Container,Row,Col,Card,Button,Table,Pagination } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container,Row,Col,Card,Button,Table,Pagination,Modal } from "react-bootstrap";
 import { PLacement } from "./About"; 
+import { Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import starSVG from "./image/star-svgrepo-com.svg";
 import FSD from "./image/Full-stack-development-img.jpg";
@@ -26,18 +28,31 @@ function CoursesPage1()
 
 const CourseList = [
     { id: 1, title: 'Full Stack Development', text: 'Simplilearn is a comprehensive curriculum that prepares students to flourish in the fast-paced world of full-stack development. ', image: FSD, StarNum: 9, price: '55000', Month: 6, Num : Math.floor(Math.random()*100) },
-  { id: 2, title: 'Digital Marketing', text: 'Digital marketing is one of the top courses in India to pursue. This course deals with strategies for promoting products and services online.', image: DM, StarNum: Math.floor(Math.random()*10 +1), price: '25000', Month: 3, Num : Math.floor(Math.random()*100) },
-  { id: 3, title: 'Cybersecurity', text: 'Cybersecurity. With the increasing incidents of cyberattacks, Cybersecurity has become significantly important for all organisations.', image: CS, StarNum: Math.floor(Math.random()*10 +1), price: '45000', Month: 6, Num : Math.floor(Math.random()*100) },
-  { id: 4, title: 'Business Analytics', text: 'Business analytics refers to the skills, technologies, and practices for iterative exploration and investigation of past business performance to gain insight and drive business planning.', image: BA, StarNum: Math.floor(Math.random()*10 +1), price: '48000', Month: 5, Num : Math.floor(Math.random()*100) },
-  { id: 5, title: 'PHP', text: 'PHP is a general-purpose scripting language geared towards web development. It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1993 and released in 1995.', image: PHP, StarNum: Math.floor(Math.random()*10 +1), price: '15000', Month: 3, Num : Math.floor(Math.random()*100) },
-  { id: 6, title: 'Data Science', text: 'Data science courses prepare candidates to compile, analyse and manipulate large amounts of data and derive valuable insights from them.', image: DS, StarNum: Math.floor(Math.random()*10 +1), price: '40500', Month: 6, Num : Math.floor(Math.random()*100) },
-  { id: 7, title: 'UI/UX Designer', text: 'This course covers color theory, typography, layouts, patterns, and the design process. It also includes a usability evaluation and UX intensive phase, where students learn how to conduct and analyze usability tests.', image: UI, StarNum: Math.floor(Math.random()*10 +1), price: '38000', Month: 4, Num : Math.floor(Math.random()*100) },
-  { id: 8, title: 'Python', text: 'Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.', image: PY, StarNum: Math.floor(Math.random()*10 +1), price: '30500', Month: 3, Num : Math.floor(Math.random()*100) },
+  { id: 2, title: 'Digital Marketing', text: 'Digital marketing is one of the top courses in India to pursue. This course deals with strategies for promoting products and services online.', image: DM, StarNum: Math.floor(Math.random()*10 ), price: '25000', Month: 3, Num : Math.floor(Math.random()*100) },
+  { id: 3, title: 'Cybersecurity', text: 'Cybersecurity. With the increasing incidents of cyberattacks, Cybersecurity has become significantly important for all organisations.', image: CS, StarNum: Math.floor(Math.random()*10 ), price: '45000', Month: 6, Num : Math.floor(Math.random()*100) },
+  { id: 4, title: 'Business Analytics', text: 'Business analytics refers to the skills, technologies, and practices for iterative exploration and investigation of past business performance to gain insight and drive business planning.', image: BA, StarNum: Math.floor(Math.random()*10 ), price: '48000', Month: 5, Num : Math.floor(Math.random()*100) },
+  { id: 5, title: 'PHP', text: 'PHP is a general-purpose scripting language geared towards web development. It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1993 and released in 1995.', image: PHP, StarNum: Math.floor(Math.random()*10 ), price: '15000', Month: 3, Num : Math.floor(Math.random()*100) },
+  { id: 6, title: 'Data Science', text: 'Data science courses prepare candidates to compile, analyse and manipulate large amounts of data and derive valuable insights from them.', image: DS, StarNum: Math.floor(Math.random()*10 ), price: '40500', Month: 6, Num : Math.floor(Math.random()*100) },
+  { id: 7, title: 'UI/UX Designer', text: 'This course covers color theory, typography, layouts, patterns, and the design process. It also includes a usability evaluation and UX intensive phase, where students learn how to conduct and analyze usability tests.', image: UI, StarNum: Math.floor(Math.random()*10 ), price: '38000', Month: 4, Num : Math.floor(Math.random()*100) },
+  { id: 8, title: 'Python', text: 'Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.', image: PY, StarNum: Math.floor(Math.random()*10 ), price: '30500', Month: 3, Num : Math.floor(Math.random()*100) },
 ];
 
 
 const CourseCard = () =>
 {
+  const [show, setShow] = useState(false);
+    const [selectedCourse, setSelectedCourse] = useState(null);
+
+    const handleShow = (course) => {
+        setSelectedCourse(course);
+        setShow(true);
+    };
+
+    const handleClose = () => {
+        setShow(false);
+        setSelectedCourse(null);
+    };
+
     return(
         <Container className="mt-3">
           <h1 className='text-center p-5'>Most <span className='text-primary'>popular</span> Courses </h1>
@@ -49,7 +64,7 @@ const CourseCard = () =>
                   <Card.Body className='lh-base  d-flex flex-column'>
                     <Card.Title className='text-center'>{card.title}</Card.Title>
                     <Card.Text className='d-none d-md-block d-lg-block'>{card.text}</Card.Text>
-                    <Table className='table mt-auto'>
+                    <Table className='table mt-auto table-borderless'>
                       <tbody>
                         <tr>
                           <td>
@@ -68,14 +83,14 @@ const CourseCard = () =>
                         </tr>
                       </tbody>
                     </Table>
-                    <Button variant="outline-primary" className='w-100'>Join Now</Button>
+                    <Button variant="outline-primary" className='w-100' onClick={() => handleShow(card)}>Join Now</Button>
                   </Card.Body>
-                  <Card.Footer>
-                    <Table className="table h-100 mt-auto me-auto text-center">
+                  <Card.Footer className="m-0 p-0">
+                    <Table className="table m-0 p-0 text-center table-borderless">
                         <tbody>
                           <tr>
-                              <td><i className="bi bi-calendar3"></i>{card.Month} Month</td>
-                              <td><i className="bi bi-people-fill"></i>{card.Num} Students</td>
+                              <td><i className="bi bi-calendar3"></i> {card.Month} Month</td>
+                              <td><i className="bi bi-people-fill"></i> {card.Num} Students</td>
                           </tr>
                         </tbody>
                     </Table>
@@ -84,7 +99,30 @@ const CourseCard = () =>
               </Col>
             ))}
           </Row>
-           <div className="d-flex justify-content-center">
+          {selectedCourse && (
+                <Modal size="lg" show={show} onHide={handleClose} centered>
+                    <Modal.Body>
+                        <Row>
+                            <Col md={5}>
+                                <img src={selectedCourse.image} alt={selectedCourse.title} style={{ width: '100%', height: 'auto' }} className="h-100 mt-auto mb-auto"/>
+                            </Col>
+                            <Col md={7}>
+                                <h2>{selectedCourse.title}</h2>
+                                <p>{selectedCourse.text}</p>
+                                <p><strong>Price:</strong> ₹{selectedCourse.price}</p>
+                                <p><strong>Duration:</strong> {selectedCourse.Month} months</p>
+                                <p><strong>Students Enrolled:</strong> {selectedCourse.Num}</p>
+                                <p><strong>Rating:</strong> 4.{selectedCourse.StarNum} / 5</p>
+                            </Col>
+                        </Row>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="primary" as={Link} to="/register" onClick={handleClose}>Register</Button>
+                        <Button variant="secondary" onClick={handleClose}>Cancel</Button>
+                    </Modal.Footer>
+                </Modal>
+          )}
+          <div className="d-flex justify-content-center">
             <Pagination>
                  <Pagination.First disabled/>
                  <Pagination.Item variant="outline-primary" active>{1}</Pagination.Item>
@@ -92,16 +130,18 @@ const CourseCard = () =>
                  <Pagination.Item variant="outline-primary">{3}</Pagination.Item>
                  <Pagination.Last/>
             </Pagination>
-           </div>
+          </div>
         </Container>
       )
 }
+
 
 const Courses = () => {
     return(
         <main>
             <CoursesPage1/>
             <CourseCard/>
+            {/* <JoinNowModal/> */}
             <PLacement/>
         </main>
     )

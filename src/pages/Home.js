@@ -2,6 +2,7 @@ import React from 'react';
 import { Carousel,Container,Row,Col,Card,Button,Table } from 'react-bootstrap';
 import { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from "react-router-dom";
 
 import SlideImg1 from "./image/slide-img-1.jpg";
 import SlideImg2 from "./image/slide-img-2.jpg";
@@ -66,7 +67,7 @@ const HomePage1 = () => {
           <br/>
           <h5 className='text-body-secondary'>Boost Your Skills Through Online Education Platform For Digital Skills</h5>
           <br/>
-          <button type='button' className='btn btn-outline-primary' >Get Started</button>
+          <Button type='button' variant='outline-primary' as={Link} to="/register">Get Started</Button>
         </Col>
 
         <Col md={4} className="text-center">
@@ -148,7 +149,7 @@ const HomeCard = () => {
               <Card.Body className='lh-base  d-flex flex-column'>
                 <Card.Title className='text-center'>{card.title}</Card.Title>
                 <Card.Text className='d-none d-md-block d-lg-block'>{card.text}</Card.Text>
-                <Table className='table  mt-auto'>
+                <Table className='table  mt-auto table-borderless'>
                   <tbody>
                     <tr>
                       <td>
@@ -167,7 +168,7 @@ const HomeCard = () => {
                     </tr>
                   </tbody>
                 </Table>
-                <Button variant="outline-primary" className='w-100'>Join Now</Button>
+                <Button variant="outline-primary" className='w-100' as={Link} to="/courses">Join Now</Button>
               </Card.Body>
             </Card>
           </Col>
