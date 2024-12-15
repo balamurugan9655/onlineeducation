@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/onlineeducation/static/css/main.f52ce0c1.css",
-    "main.js": "/onlineeducation/static/js/main.915052a4.js",
+    "main.css": "/onlineeducation/static/css/main.e3ebe5ac.css",
+    "main.js": "/onlineeducation/static/js/main.a18b03e0.js",
     "static/media/Data-science-img.jpg": "/onlineeducation/static/media/Data-science-img.9675aeedda3503d0dcad.jpg",
     "static/media/about-bg-img.jpeg": "/onlineeducation/static/media/about-bg-img.0025b4212b6e8d479989.jpeg",
     "static/media/Cybersecurity-img.jpg": "/onlineeducation/static/media/Cybersecurity-img.d82c3383c6908f047503.jpg",
     "static/media/PHP-img.jpg": "/onlineeducation/static/media/PHP-img.7f6328504acfce371b38.jpg",
+    "static/media/Login-bg-img.jpg": "/onlineeducation/static/media/Login-bg-img.94c7813d663270ec2057.jpg",
     "static/media/contact-bg-img.jpg": "/onlineeducation/static/media/contact-bg-img.3544c7cf7e5cfb632d60.jpg",
     "static/media/feedback-bg-img.jpg": "/onlineeducation/static/media/feedback-bg-img.feaa035bd7274c5cba33.jpg",
     "static/media/courses-bg-img.jpg": "/onlineeducation/static/media/courses-bg-img.3af79838ba11aae731a8.jpg",
@@ -16,6 +17,7 @@
     "static/media/people-img-2.png": "/onlineeducation/static/media/people-img-2.26f95a4fecc945c2498e.png",
     "static/media/people-img-1.png": "/onlineeducation/static/media/people-img-1.e8f359537396d95192f6.png",
     "static/media/Python-img-org.jpg": "/onlineeducation/static/media/Python-img-org.8e35f288800e896fe58a.jpg",
+    "static/media/Register-bg-img.jpg": "/onlineeducation/static/media/Register-bg-img.7e83356f8a7de6986050.jpg",
     "static/media/UI-UX-designer-img.jpg": "/onlineeducation/static/media/UI-UX-designer-img.3936673866ef4bd1c77a.jpg",
     "static/media/Digital-marketing.jpg": "/onlineeducation/static/media/Digital-marketing.3a6d5b54cdb2d1c2da31.jpg",
     "static/media/Full-stack-development-img.jpg": "/onlineeducation/static/media/Full-stack-development-img.9506efd33683d482afca.jpg",
@@ -33,11 +35,11 @@
     "static/media/it-company-img4.jpg": "/onlineeducation/static/media/it-company-img4.3f629d7c394b178517f4.jpg",
     "index.html": "/onlineeducation/index.html",
     "static/media/star-svgrepo-com.svg": "/onlineeducation/static/media/star-svgrepo-com.692f18a7c4984969c1256ee5a52fdac9.svg",
-    "main.f52ce0c1.css.map": "/onlineeducation/static/css/main.f52ce0c1.css.map",
-    "main.915052a4.js.map": "/onlineeducation/static/js/main.915052a4.js.map"
+    "main.e3ebe5ac.css.map": "/onlineeducation/static/css/main.e3ebe5ac.css.map",
+    "main.a18b03e0.js.map": "/onlineeducation/static/js/main.a18b03e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.f52ce0c1.css",
-    "static/js/main.915052a4.js"
+    "static/css/main.e3ebe5ac.css",
+    "static/js/main.a18b03e0.js"
   ]
 }
