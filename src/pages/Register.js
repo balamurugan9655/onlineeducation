@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, Button, Container, Row, Col } from 'react-bootstrap';
+import { Form, Button, Container, Row, Col,Modal } from 'react-bootstrap';
 
 
 const RegisterPage = () =>
@@ -67,8 +67,21 @@ const RegisterPage = () =>
       const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form submitted:', formData);
-        alert('Registration successful!');
       };
+
+          //Model Code
+      const [show, setShow] = useState(false);
+      const handleClose = () => setShow(false);
+      const handleShow = () => setShow(true);
+
+          //Submit Alert Message
+      function SubAlt()
+      {
+        return( 
+          alert('Register Successful!'),
+         handleClose()
+        )
+      }
     
       return (
         <Container fluid className="m-0 bg-scroll register-parallex">
@@ -109,7 +122,7 @@ const RegisterPage = () =>
                   <Col md={6}>
                     <Form.Group controlId="formDateOfBirth" className="mb-3">
                       <Form.Label>Date of Birth : </Form.Label>
-                      <Form.Control type="text" name="dateOfBirth" placeholder="DD/MM/YYYY" value={formData.dateOfBirth} onChange={handleChange} required/>
+                      <Form.Control type="text" name="dateOfBirth" placeholder="DD/MM/YYYY - 01/01/0001" value={formData.dateOfBirth} onChange={handleChange} required/>
                     </Form.Group>
                   </Col>
                   <Col md={6}>
@@ -139,7 +152,6 @@ const RegisterPage = () =>
                     </Form.Control>
                 </Form.Group>
                 <>
-                 
                     <Row>
                       <Col md={6}>
                         <Form.Group controlId="street" className="mb-3">
@@ -169,21 +181,44 @@ const RegisterPage = () =>
                       </Col>
                     </Row>
                 </>
-                
                 <Form.Group controlId="formTerms" className="mb-3">
                   <Form.Check type="checkbox" name="agreeToTerms" label="I agree to the terms and conditions" checked={formData.agreeToTerms} onChange={handleChange} required/>
                 </Form.Group>
-    
-                <Button variant="outline-primary" type="submit" className="w-100" disabled={!formData.agreeToTerms}>
+                <Button variant="outline-primary" type="submit" className="w-100" onClick={handleShow} disabled={!formData.agreeToTerms}>
                   Register
                 </Button>
               </Form>
             </Col>
           </Row>
+          <Modal show={show} onHide={handleClose} centered aria-labelledby="contained-modal-title-vcenter">
+            <Modal.Header closeButton>
+              <Modal.Title id="contained-modal-title-vcenter">
+                Application Form
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <p> <strong className='w-50'>Full Name : </strong> <span> {formData.firstName} {formData.lastName} </span> </p>
+              <p> <strong className='w-50'> Email Id : </strong> <span> {formData.email} </span> </p>
+              <p> <strong> Phone Number : </strong> <span> {formData.phone} </span> </p>
+              <p> <strong> Date Of Birth : </strong> <span> {formData.dateOfBirth} </span> </p>
+              <p> <strong> Gender : </strong> <span> {formData.gender} </span> </p>
+              <p> <strong> Course : </strong> <span> {formData.course} </span> </p>
+              <p> <strong> Address : </strong> <span> {formData.street} ,  {formData.city} , {formData.state} , {formData.postalCode}. </span> </p>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button type='submit' variant='primary' onClick={SubAlt}>
+                submit
+              </Button>
+              <Button variant="secondary" onClick={handleClose}>
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
           </Container>
         </Container>
       );
 }
+
 
 const Register = () =>
 {
