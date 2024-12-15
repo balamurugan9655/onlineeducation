@@ -240,9 +240,8 @@ function FeedBack()
 
   return(
     <Container fluid className='p-5 bg-scroll home-parallex rounded-2'>
-      <h1 className='text-center text-white'>How Learning <span className="text-primary">Like</span> You Are <spna className="text-primary">Achieving</spna> Their Goals</h1>
+      <h1 className='text-center text-white'>How Learning <span className="text-primary">Like</span> You Are <span className="text-primary">Achieving</span> Their Goals</h1>
       <br/>
-      {/* <h1 className='text-center'>Our <spna className="text-primary">Feedback</spna></h1> */}
         <Container className="my-5">
           <Carousel data-bs-theme="dark">
             {groupedFeedback.map((group, index) => (

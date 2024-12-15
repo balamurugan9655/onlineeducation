@@ -74,8 +74,8 @@ const CourseCard = () =>
                     <Table className="table h-100 mt-auto me-auto text-center">
                         <tbody>
                           <tr>
-                              <td><i class="bi bi-calendar3"></i>{card.Month} Month</td>
-                              <td><i class="bi bi-people-fill"></i>{card.Num} Students</td>
+                              <td><i className="bi bi-calendar3"></i>{card.Month} Month</td>
+                              <td><i className="bi bi-people-fill"></i>{card.Num} Students</td>
                           </tr>
                         </tbody>
                     </Table>

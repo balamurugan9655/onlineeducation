@@ -8,7 +8,7 @@ const Layout = () => {
         <>
           <Navbar bg="white" expand="lg" className="position-fixed z-1 w-100">
             <Container >
-              <Navbar.Brand as={Link} to="/" className='fw-bold'> <spna className="text-primary">O</spna>nline <spna className="text-primary">E</spna>ducation</Navbar.Brand>
+              <Navbar.Brand as={Link} to="/" className='fw-bold'> <span className="text-primary">O</span>nline <span className="text-primary">E</span>ducation</Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
