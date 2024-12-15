@@ -19,7 +19,7 @@ function SendMessage()
 {
     return(
         <Container fluid className="p-0 p-md-5 p-lg-5">        
-            <h1 className="text-center p-3">Get in <spna className="text-primary">Touch</spna></h1>
+            <h1 className="text-center p-3">Get in <span className="text-primary">Touch</span></h1>
             <Container>
             <Row className="row row-cols-1 row-cols-md-2 d-flex justify-contant-center row-cols-lg-2">
                 <Col className="border mb-2">

@@ -50,30 +50,34 @@ const CourseCard = () =>
                     <Card.Title className='text-center'>{card.title}</Card.Title>
                     <Card.Text className='d-none d-md-block d-lg-block'>{card.text}</Card.Text>
                     <Table className='table mt-auto'>
-                      <tr>
-                        <td>
-                          <img src={starSVG} alt='star-img' className='m-0 p-0'/>
-                          <img src={starSVG} alt='star-img' className='m-0 p-0'/>
-                          <img src={starSVG} alt='star-img' className='m-0 p-0'/>
-                          <img src={starSVG} alt='star-img' className='m-0 p-0'/>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffea00" class="bi bi-star-half m-0 p-0" viewBox="0 0 16 16">
-                            <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
-                          </svg>
-                        </td>
-                        <td rowSpan={2}> ₹{card.price} </td>
-                      </tr>
-                      <tr>
-                        <td> (<span className='text-warning bg-transparent'>4.{card.StarNum}</span>) </td>
-                      </tr>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <img src={starSVG} alt='star-img' className='m-0 p-0'/>
+                            <img src={starSVG} alt='star-img' className='m-0 p-0'/>
+                            <img src={starSVG} alt='star-img' className='m-0 p-0'/>
+                            <img src={starSVG} alt='star-img' className='m-0 p-0'/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffea00" className="bi bi-star-half m-0 p-0" viewBox="0 0 16 16">
+                              <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
+                            </svg>
+                          </td>
+                          <td rowSpan={2}> ₹{card.price} </td>
+                        </tr>
+                        <tr>
+                          <td> (<span className='text-warning bg-transparent'>4.{card.StarNum}</span>) </td>
+                        </tr>
+                      </tbody>
                     </Table>
                     <Button variant="outline-primary" className='w-100'>Join Now</Button>
                   </Card.Body>
                   <Card.Footer>
                     <Table className="table h-100 mt-auto me-auto text-center">
-                        <tr>
-                            <td><i class="bi bi-calendar3"></i>{card.Month} Month</td>
-                            <td><i class="bi bi-people-fill"></i>{card.Num} Students</td>
-                        </tr>
+                        <tbody>
+                          <tr>
+                              <td><i class="bi bi-calendar3"></i>{card.Month} Month</td>
+                              <td><i class="bi bi-people-fill"></i>{card.Num} Students</td>
+                          </tr>
+                        </tbody>
                     </Table>
                   </Card.Footer>
                 </Card>

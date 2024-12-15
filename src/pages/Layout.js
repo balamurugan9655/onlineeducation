@@ -57,7 +57,7 @@ const Layout = () => {
                     <div className='d-flex justify-contant-center align-items-center'>
                       <p className='me-3'><i className="bi bi-facebook"></i> <Link className='text-decoration-none text-white'>Facebook</Link></p>
                       <p className='me-3'><i className="bi bi-twitter"></i> <Link className='text-decoration-none text-white'>Twitter</Link></p>
-                      <p className='me-3'><i class="bi bi-whatsapp"></i> <Link className='text-decoration-none text-white'>Whatsapp</Link></p>
+                      <p className='me-3'><i className="bi bi-whatsapp"></i> <Link className='text-decoration-none text-white'>Whatsapp</Link></p>
                     </div>
                   </Col>
                 </Row>

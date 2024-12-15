@@ -61,7 +61,7 @@ const HomePage1 = () => {
     <Container className="p-3">
       <Row className="align-items-center">
         <Col md={8} className="text-left text-center p-5">
-          <h1>Take Your <spna className="text-primary">Learning</spna> </h1>
+          <h1>Take Your <span className="text-primary">Learning</span> </h1>
           <h1>To The Next Level</h1>
           <br/>
           <h5 className='text-body-secondary'>Boost Your Skills Through Online Education Platform For Digital Skills</h5>
@@ -85,7 +85,7 @@ const Homepage2 = () => {
     return(
        <Container fluid>
           <Container>
-            <h1 className='text-center p-3'>How To <spna className="text-primary">Work</spna></h1>
+            <h1 className='text-center p-3'>How To <span className="text-primary">Work</span></h1>
             <Row className='row row-cols-1 row-cols-md-3 row-cols-lg-3 g-5'>
                 <Col>
                     <Card className='text-center ms-auto me-auto p-3 border-0' style={{ width: '18rem' }}>
@@ -149,21 +149,23 @@ const HomeCard = () => {
                 <Card.Title className='text-center'>{card.title}</Card.Title>
                 <Card.Text className='d-none d-md-block d-lg-block'>{card.text}</Card.Text>
                 <Table className='table  mt-auto'>
-                  <tr>
-                    <td>
-                      <img src={starSVG} alt='star-img' className='m-0 p-0'/>
-                      <img src={starSVG} alt='star-img' className='m-0 p-0'/>
-                      <img src={starSVG} alt='star-img' className='m-0 p-0'/>
-                      <img src={starSVG} alt='star-img' className='m-0 p-0'/>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffea00" class="bi bi-star-half m-0 p-0" viewBox="0 0 16 16">
-                        <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
-                      </svg>
-                    </td>
-                    <td rowSpan={2}> ₹{card.price} </td>
-                  </tr>
-                  <tr>
-                    <td> (<span className='text-warning bg-transparent'>4.5</span>) </td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img src={starSVG} alt='star-img' className='m-0 p-0'/>
+                        <img src={starSVG} alt='star-img' className='m-0 p-0'/>
+                        <img src={starSVG} alt='star-img' className='m-0 p-0'/>
+                        <img src={starSVG} alt='star-img' className='m-0 p-0'/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffea00" className="bi bi-star-half m-0 p-0" viewBox="0 0 16 16">
+                          <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
+                        </svg>
+                      </td>
+                      <td rowSpan={2}> ₹{card.price} </td>
+                    </tr>
+                    <tr>
+                      <td> (<span className='text-warning bg-transparent'>4.5</span>) </td>
+                    </tr>
+                  </tbody>
                 </Table>
                 <Button variant="outline-primary" className='w-100'>Join Now</Button>
               </Card.Body>
@@ -201,7 +203,7 @@ function Homepage4()
 
   return (
     <Container fluid className='p-3 mb-3'>
-    <h1 className='text-center p-4'>Community <spna className="text-primary">Experts</spna></h1>
+    <h1 className='text-center p-4'>Community <span className="text-primary">Experts</span></h1>
       <div style={{ display: 'flex', gap: '50px', overflow: 'hidden', justifyContent: 'center', alignItems: 'center' }}>
       {cards.map((card, index) => (
         <div key={card.id} style={{ textAlign: 'center', width: '150px' }}>
@@ -238,7 +240,7 @@ function FeedBack()
 
   return(
     <Container fluid className='p-5 bg-scroll home-parallex rounded-2'>
-      <h1 className='text-center text-white'>How Learning <spna className="text-primary">Like</spna> You Are <spna className="text-primary">Achieving</spna> Their Goals</h1>
+      <h1 className='text-center text-white'>How Learning <span className="text-primary">Like</span> You Are <spna className="text-primary">Achieving</spna> Their Goals</h1>
       <br/>
       {/* <h1 className='text-center'>Our <spna className="text-primary">Feedback</spna></h1> */}
         <Container className="my-5">

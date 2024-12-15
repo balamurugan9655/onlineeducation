@@ -24,7 +24,7 @@ function PLacement()
 {
     return(
         <Container fluid className="p-5 d-none d-md-block d-lg-block">
-            <h1 className="text-center p-3">Our <spna className="text-primary">Learners</spna> Work at</h1>
+            <h1 className="text-center p-3">Our <span className="text-primary">Learners</span> Work at</h1>
             <Row className="row row-cols-5 text-center ">
                 <Col className="border Abg-img Abg-img1">
                     <h3 className="p-4 text-center">Full Stack Development</h3>
@@ -51,7 +51,7 @@ const Mission = () =>
 {
     return(
         <Container className="p-3 mb-3">
-            <h1 className='text-center p-4'>Our <spna className="text-primary">Goals</spna></h1>
+            <h1 className='text-center p-4'>Our <span className="text-primary">Goals</span></h1>
             <Row className='row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4'>
                 <Col>
                     <Card className='ms-auto me-auto p-3 border' style={{ width: '25rem' }}>
