@@ -190,7 +190,7 @@ const RegisterPage = () =>
               </Form>
             </Col>
           </Row>
-          <Modal show={show} onHide={handleClose} centered aria-labelledby="contained-modal-title-vcenter">
+          <Modal size="lg" show={show} onHide={handleClose} centered aria-labelledby="contained-modal-title-vcenter">
             <Modal.Header closeButton>
               <Modal.Title id="contained-modal-title-vcenter">
                 Application Form
