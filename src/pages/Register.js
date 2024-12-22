@@ -87,7 +87,7 @@ const RegisterPage = () =>
         <Container fluid className="m-0 bg-scroll register-parallex">
           <Container className='p-5'>
             <Row className="justify-content-center">
-            <Col md={6} className='border p-4 bg-blur rounded-3 fw-bold'>
+            <Col md={8} className='border p-4 bg-blur rounded-3 fw-bold'>
               <h2 className="text-center text-primary mb-4">Register Form</h2>
               <Form onSubmit={handleSubmit}>
                 <Row>

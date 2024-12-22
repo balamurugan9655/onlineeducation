@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
 export default function App() {
+    // basename="/onlineeducation"
     return(
         <BrowserRouter basename="/onlineeducation">
             <Routes>
