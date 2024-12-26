@@ -14,15 +14,15 @@ import './index.css';
 export default function App() {
     // basename="/onlineeducation"
     return(
-        <BrowserRouter>
+        <BrowserRouter basename="/onlineeducation">
             <Routes>
                 <Route path="/" element={<Layout/>}>
                     <Route index element={<Home/>}/>
-                    <Route path="about" element={<About/>}/>
-                    <Route path="courses" element={<Courses/>}/>
-                    <Route path="contact" element={<Contact/>}/>
-                    <Route path="register" element={<Register/>}/>
-                    <Route path="login" element={<Login/>}/>
+                    <Route path="/about" element={<About/>}/>
+                    <Route path="/courses" element={<Courses/>}/>
+                    <Route path="/contact" element={<Contact/>}/>
+                    <Route path="/register" element={<Register/>}/>
+                    <Route path="/login" element={<Login/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>
