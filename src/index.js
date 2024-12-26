@@ -14,7 +14,7 @@ import './index.css';
 export default function App() {
     // basename="/onlineeducation"
     return(
-        <BrowserRouter basename="/onlineeducation">
+        <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Layout/>}>
                     <Route index element={<Home/>}/>
