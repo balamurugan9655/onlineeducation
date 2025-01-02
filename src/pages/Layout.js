@@ -1,9 +1,55 @@
 import React from 'react';
-import { Outlet,Link } from "react-router-dom";
+import { useState,useEffect } from 'react';
+import { Outlet,Link,useLocation } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, Container,Button,Row,Col } from 'react-bootstrap';
 
+function ProgressBar({ progress }) {
+  return (
+    <div
+      style={{
+        width: `${progress}%`,
+        height: "5px",
+        backgroundColor: "blue",
+        position: "fixed",
+        top: 0,
+        left: 0,
+        transition: "width 0.3s ease-in-out",
+        zIndex: 1000,
+        display: progress >= 120 ? "none" : "block",
+      }}
+    ></div>
+  );
+}
+
 const Layout = () => {
+
+  const [progress, setProgress] = useState(0);
+  const [loading, setLoading] = useState(false);
+  const [renderPage, setRenderPage] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setLoading(true); // Show progress bar
+    setRenderPage(false); // Delay page rendering
+    setProgress(0); // Reset progress bar
+
+    let value = 0;
+    const interval = setInterval(() => {
+      value += 10;
+      setProgress(value);
+      if (value >= 120) {
+        clearInterval(interval);
+        setTimeout(() => {
+          setLoading(false); // Hide progress bar
+          setRenderPage(true); // Allow page rendering
+        }, 200); // Slight delay to make the progress bar visible at 100%
+      }
+    }, 200); // Adjust speed here
+
+    return () => clearInterval(interval); // Cleanup
+  }, [location]);
+
     return(
         <>
           <Navbar bg="white" expand="lg" className="position-fixed z-1 w-100">
@@ -23,7 +69,8 @@ const Layout = () => {
             </Container>
           </Navbar>
           <Container fluid className='pt-5'>
-            <Outlet/>
+            {loading && <ProgressBar progress={progress} />}
+            {renderPage && <Outlet />} {/* Render page only after progress bar completes */}
           </Container>
           <Container fluid className='mt-3'>
             <footer className="bg-dark text-white py-4">
