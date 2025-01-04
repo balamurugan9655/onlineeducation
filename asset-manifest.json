@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/onlineeducation/static/css/main.e3ebe5ac.css",
-    "main.js": "/onlineeducation/static/js/main.425b77fe.js",
+    "main.css": "/onlineeducation/static/css/main.444c45c4.css",
+    "main.js": "/onlineeducation/static/js/main.92b94678.js",
     "static/media/Data-science-img.jpg": "/onlineeducation/static/media/Data-science-img.9675aeedda3503d0dcad.jpg",
     "static/media/about-bg-img.jpeg": "/onlineeducation/static/media/about-bg-img.0025b4212b6e8d479989.jpeg",
     "static/media/Cybersecurity-img.jpg": "/onlineeducation/static/media/Cybersecurity-img.d82c3383c6908f047503.jpg",
@@ -35,11 +35,11 @@
     "static/media/it-company-img4.jpg": "/onlineeducation/static/media/it-company-img4.3f629d7c394b178517f4.jpg",
     "index.html": "/onlineeducation/index.html",
     "static/media/star-svgrepo-com.svg": "/onlineeducation/static/media/star-svgrepo-com.692f18a7c4984969c1256ee5a52fdac9.svg",
-    "main.e3ebe5ac.css.map": "/onlineeducation/static/css/main.e3ebe5ac.css.map",
-    "main.425b77fe.js.map": "/onlineeducation/static/js/main.425b77fe.js.map"
+    "main.444c45c4.css.map": "/onlineeducation/static/css/main.444c45c4.css.map",
+    "main.92b94678.js.map": "/onlineeducation/static/js/main.92b94678.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3ebe5ac.css",
-    "static/js/main.425b77fe.js"
+    "static/css/main.444c45c4.css",
+    "static/js/main.92b94678.js"
   ]
 }
