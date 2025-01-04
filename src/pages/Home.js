@@ -174,7 +174,7 @@ const HomeCard = () => {
           </Col>
         ))}
       </Row>
-      <Button type='button' variant="outline-primary" className='ms-auto me-auto d-flex justify-contant-center'>More Courses</Button>
+      <Button type='button' variant="outline-primary" className='ms-auto me-auto d-flex justify-contant-center' onClick={()=>{alert('click to course page')}}>More Courses</Button>
     </Container>
   )
 }

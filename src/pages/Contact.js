@@ -17,6 +17,12 @@ function ContactPage1()
 
 function SendMessage()
 {
+    function messageSend()
+    {
+        const name = document.getElementById('name').value;
+        console.log(name);
+        alert(`Hai ${name}, Thanks For Your Message !!`)
+    }
     return(
         <Container fluid className="p-0 p-md-5 p-lg-5">        
             <h1 className="text-center p-3">Get in <span className="text-primary">Touch</span></h1>
@@ -26,7 +32,7 @@ function SendMessage()
                     <Form className="bg-dark p-5 text-white rounder">
                         <Form.Group className="mb-3">
                             <Form.Label>Name : </Form.Label>
-                            <Form.Control type="text" placeholder="Enter The Name" required className="w-100"/>
+                            <Form.Control type="text" placeholder="Enter Your Name" id="name" required className="w-100"/>
                         </Form.Group>
                         <Form.Group className="mb-3">
                             <Form.Label>Email : </Form.Label>
@@ -40,7 +46,7 @@ function SendMessage()
                             <Form.Label>Send Message  </Form.Label>
                             <Form.Control as="textarea" rows={4} placeholder="Send Feedback" required className="w-100"/>
                         </Form.Group>
-                        <Button variant="outline-primary" type="submit">Send Message</Button>
+                        <Button variant="outline-primary" type="submit" onClick={messageSend}>Send Message</Button>
                     </Form>
                 </Col>
                 <Col className="border mb-2">

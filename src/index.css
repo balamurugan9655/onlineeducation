@@ -7,6 +7,20 @@
     background-size: cover;
     background-position: center;
 }
+.hover-link {
+    font-weight: bold;
+    color: black;
+}
+.hover-link:hover {
+    color: blue;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: black;
+}
+.hover-icon {
+    color: blue;
+}
 .home-parallex {
     background-image: url("./pages/image/feedback-bg-img.jpg");
 }
